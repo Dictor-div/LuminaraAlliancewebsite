@@ -38,22 +38,32 @@ header {
     padding: 2px;
 }
 /* navigation bar */
-nav {
-    width: 100%;
+#navbar {  
+    position: fixed; /* Make it stick/fixed */
+    top: 2rem; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
     margin: 0;
     padding: 0;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+.empty {
+    height: 6rem;
+    width: 100%;
+    margin: 0;
 }
 
 /* Logo section of the header */
 
 .logo_container {
-    width: 90%;
-    margin: 0 auto;
+    margin: 0;
     padding: .5rem 0;
     position: relative;
     display: flex;
-    justify-content: center;
+    left: 2rem;
     align-items: center;
 }
 .logo_link {
@@ -69,15 +79,12 @@ nav {
 
 /* bottom navbar / nav-menu */
 
-.bottom {
-    width: 100%;
-    background-color: inherit;
-    position: relative;
+#bottom {
     margin: 0;
-    padding: 0;
+    padding: .5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    right: 2rem;
 }
 
 /* navigation menu */
@@ -85,10 +92,7 @@ nav {
 .nav_menu {
     display: flex;
     margin: 0 auto;
-    width: 60%;
-    box-shadow: var(--text) 0px 1px 2px 0px, var(--text) 0px 2px 6px 2px;
     padding: 0;
-    border-radius: 2px;
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
