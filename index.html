@@ -3,19 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/logo192.png">
+    <link rel="stylesheet" href="/files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Welcome to Luminara!</title>
 </head>
 <body>
     <!-- Header content goes here. Navbar, logo and other links -->
     <header>
+       <div class="top">
+        <ul class="topflex">
+            <li class="flex">
+                <div class="contact">
+                    <a class="toplink" href="tel:+"><i class="fas fa-phone-flip"></i></a>
+                    <a class="toplink" href="mailto:"><i class="fas fa-envelope"></i></a>
+                </div>
+            </li>
+            <li  class="flex">
+                <div class="donate">
+                    <a class="toplink" href="/#donate" class="donate">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </a>
+                    <a class="toplink" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+       </div>
        <nav>
-        <aside>
+        <aside class="logo_container">
             <a href="/" class="logo_link">
-                <img src="/images/logo.jpg" alt="Luminaro Logo">
+                <img class="logo" src="/images/logo.jpg" alt="Luminaro Logo">
             </a>
         </aside>
-        <aside>
-            <ul>
+        <aside class="bottom">
+            <ul class="nav_menu">
                 <li>
                     <a href="/" class="nv_links">
                         home
