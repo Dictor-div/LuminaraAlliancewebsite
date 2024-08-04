@@ -1,5 +1,6 @@
 /* importing our navigation styles */
 @import '/files/navbar.css';
+@import '/files/main.css';
 :root {
     --headings: #0A07D0;
     --text: #018202;
