@@ -34,33 +34,33 @@
        <nav id="navbar">
         <aside class="logo_container">
             <a href="/" class="logo_link">
-                <img class="logo" src="/images/logo.jpg" alt="Luminaro Logo">
+                <img class="logo" src="/images/logo.png" alt="Luminaro Logo">
             </a>
         </aside>
         <aside id="bottom">
             <ul class="nav_menu">
-                <li class="nav_list">
+                <li onclick="removeNav()" class="nav_list">
                     <a href="/" class="nv_links">
                         home
                     </a>
                 </li>
-                <li class="nav_list">
+                <li onclick="removeNav()" class="nav_list">
                     <div class="dropdown">
-                        <a href="/#about" class="nv_links out">
+                        <a onclick="removeNav()" href="/#about" class="nv_links out">
                             about
                         </a>
                         <ul class="dropdow_menu">
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#our_goals" class="nv_links">
                                     our goals
                                 </a>
                             </li>
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#principles" class="nv_links">
                                     our principles
                                 </a>
                             </li>
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#core_values" class="nv_links">
                                     our core values
                                 </a>
@@ -68,23 +68,23 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav_list">
+                <li onclick="removeNav()" class="nav_list">
                     <div class="dropdown">
-                        <a href="/#our_work" class="nv_links out">
+                        <a onclick="removeNav()" href="/#our_work" class="nv_links out">
                             our programs
                         </a>
                         <ul class="dropdow_menu">
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#women_empowerment_program" class="nv_links">
-                                    women empowerment program
+                                    women empowerment
                                 </a>
                             </li>
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#education_program" class="nv_links">
                                     education program
                                 </a>
                             </li>
-                            <li class="nav_list">
+                            <li onclick="removeNav()" class="nav_list">
                                 <a href="/#youth_program" class="nv_links">
                                     youth programs
                                 </a>
@@ -92,18 +92,45 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav_list">
-                    <a href="/#contact" class="nv_links">
-                        contact
+                <li onclick="removeNav()" class="nav_list">
+                    <a href="/#contact" class="talk">
+                        talk to us
                     </a>
                 </li>
             </ul>
         </aside>
+        <div class="btn_container">
+            <button onclick="showNav()" id="menu_btn" type="button">
+                <spn class="ham"></spn>
+            </button>
+        </div>
        </nav>
        <div class="empty"/>
     </header>
     <!-- this is the main content area -->
     <main>
+        <div class="jumbotron">
+         <div class="slideshow-container">
+             <div class="mySlides one fade">
+               <div class="numbertext">1 / 3</div>
+               <div class="text">Caption Text</div>
+             </div>
+             <div class="mySlides two fade">
+               <div class="numbertext">2 / 3</div>
+               <div class="text">Caption Two</div>
+             </div>
+             <div class="mySlides three fade">
+               <div class="numbertext">3 / 3</div>
+               <div class="text">Caption Three</div>
+             </div>
+             </div>
+             <br>
+             <div style="text-align:center">
+               <span class="dot"></span> 
+               <span class="dot"></span> 
+               <span class="dot"></span> 
+             </div>            
+        </div>
        <section class="fluid" id="about">
          about
        </section>
