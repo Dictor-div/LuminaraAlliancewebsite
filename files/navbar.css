@@ -49,6 +49,7 @@ header {
     justify-content: space-around;
     align-items: center;
     z-index: 99;
+    background-color: var(--primary);
 }
 .empty {
     height: 6rem;
