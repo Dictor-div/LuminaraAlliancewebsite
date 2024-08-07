@@ -229,7 +229,7 @@ img {vertical-align: middle;}
 .one {
     width: 100%;
     min-height: 75vh;
-    background-image: url(/images/kids1.jpg);
+    background-image: url(/images/women.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ img {vertical-align: middle;}
 .two {
     width: 100%;
     min-height: 75vh;
-    background-image: url(/images/kids2.jpg);
+    background-image: url(/images/edu1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,14 +245,180 @@ img {vertical-align: middle;}
 .three {
     width: 100%;
     min-height: 75vh;
-    background-image: url(/images/kids3.jpg);
+    background-image: url(/images/youth.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.details1,
+.details2 {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    padding: 1rem 0;
+}
+
+/* first slider */
+
+.fifty {
+    height: 30vh;
+    content: '';
+    width: 100%;
+    margin: 0;
+}
+#detail1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: var(--clear);
+    border-radius: 20px;
+}
+#det1 {
+    font-size: 250%;
+    color: var(--secondary);
+    text-transform: capitalize;
+    margin: 2px auto;
+    width: 95%;
+    text-align: center;
+    font-weight: 800;
+}
+#det2 {
+    font-size: x-large;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin: 3px; 
+    font-weight: 500;
+    text-align: center;
+}
+#link1 {
+    padding: 7px 15px 7px 9px;
+    background-color: var(--secondary);
+    color: var(--headings);
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+
+/* second slider */
+.details1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+}
+#deta {
+    font-size: 250%;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin: 2px;
+    text-align: center;
+    font-weight: 800;
+}
+.detail3 {
+    align-self: right;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#deta2 {
+    font-size: x-large;
+    color: var(--secondary);
+    text-transform: capitalize;
+    margin: 3px; 
+    font-weight: 500;
+    text-align: center;  
+}
+#link2 {
+    padding: 7px 15px 9px 15px;
+    background-color: var(--primary);
+    color: var(--headings);
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: capitalize; 
+}
+
+
+/* third slider */
+.details {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 0;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+#detai {
+    font-size: 250%;
+    color: var(--headings);
+    text-transform: capitalize;
+    margin: 2px;
+    right: 3rem;
+    font-weight: 800;
+}
+#detai2 {
+    font-size: x-large;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin: 3px; 
+    font-weight: 500;  
+}
+.ddd1 {
+    width: 40vw;
+    height: 40vh;
+    content: '';
+    display: block;
+}
+.detail {
+    width: 90%;
+    min-height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.oro1 {
+    text-align: right;
+}
+#link3 {
+    padding: 7px 15px 9px 15px;
+    background-color: var(--headings);
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: capitalize; 
+}
+
+/* common rhings */
+
+
+.link {
+    padding: 1rem 0;
+    margin: 0 auto;
+    position: relative;
+}
+.oro {
+    text-align: center;
 }
 
 /* Responsive design */
@@ -317,5 +483,18 @@ img {vertical-align: middle;}
         border-bottom: .3px solid var(--text);
         padding: .3rem 0;
         border-radius: 10px;
+    }
+    #detail1 {
+        width: 95%;
+    }
+}
+@media screen and (max-width:540px) {
+    .fifty {
+        display: none;
+    }
+}
+@media screen and (max-width:320px) {
+    .logo {
+        width: 40vmin;
     }
 }
