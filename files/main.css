@@ -282,3 +282,68 @@ img {vertical-align: middle;}
 .tex strong {
     color: var(--text);
 }
+
+/* goals, mission, vision,and values */
+
+.container_fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: var(--extra);
+}
+
+/* statements */
+
+
+#principles {
+    position: relative;
+}
+#principles h2 {
+    font-size: 200%;
+    text-align: center;
+    color: var(--text);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.statement {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.statement p {
+    font-size: x-large;
+    font-weight: 700;
+    color: var(--headings);
+    opacity: .6;
+}
+
+.visi {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.visigrid {
+    border-radius: 10px;
+    min-height: 40vh;
+    padding: 1rem;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+.grigri {
+    background-color: var(--text);
+}
+.dridri {
+    background-color: var(--headings);
+}
+.visigrid p {
+    color: var(--primary);
+    background-color: pe ;l
+}
+
