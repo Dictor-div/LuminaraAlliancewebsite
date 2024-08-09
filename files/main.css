@@ -8,11 +8,210 @@ main {
     min-height: 60vh;
     padding: 0;
 }
+/* Hero section */
+.jumbotron {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--clear2);
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+#jumbotron {
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    position: relative;
+    background-color: var(--extra);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+}
+#texty {
+    background-color: var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius:0 20px 0 20px ;
+}
+#texty2 {
+    background-color: var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius:20px 0 0  20px;
+}
+#texty3 {
+    background-color: var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: 0 20px 20px 0;
+}
+.detail {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+    transition: all 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    position: relative;
+    border-radius: 20px;
+}
+.text {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.here-images {
+    width: 95%;
+    right: 0;
+    border-radius: 20px;
+}
+#one,
+#two,
+#three {
+    font-size: 200%;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+#one {
+    color: var(--headings);
+}
+#two {
+    color: var(--secondary);
+    text-align: right;
+}
+#three {
+    color: var(--text);
+}
+.text h3 {
+    font-size: 125%;
+    position: relative;
+    opacity: .8;
+}
+#subone {
+    color: var(--headings);
+    font-weight: 700;
+    position: relative;
+    font-size: larger;
+}
+#oned {
+    color: var(--secondary);
+    font-weight: 700;
+    position: relative;
+    font-size: larger;
+}
+#twone {
+    text-align: right;
+    color: var(--text);
+    font-weight: 700;
+    position: relative;
+    font-size: larger;
+}
+
+
+/* call_to_action buttons */
+
+
+.lin {
+    margin: 1rem 0;
+    padding: 0;
+    position: relative;
+}
+.lint {
+    text-align: right;
+}
+#link1 {
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--secondary);
+    padding: 8px 15px 10px 15px;
+    border-radius: 5px;
+    transition: all 350ms ease-in-out;
+}
+#link1:hover {
+    color: var(--headings);
+}
+#link2 {
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--text);
+    padding: 8px 15px 10px 15px;
+    border-radius: 5px;
+    transition: all 350ms ease-in-out;
+}
+#link2:hover {
+    color: var(--secondary);
+}
+#link3 {
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--headings);
+    padding: 8px 15px 10px 15px;
+    border-radius: 5px;
+    transition: all 350ms ease-in-out;
+}
+#link3:hover {
+    color: var(--text);
+}
+#link1 i {
+    color: var(--text);
+}
 
 /* about section */
 
 #about {
-    background-color: var(--extra);
+   position: relative; 
+   padding: 0 auto;
+   position: relative;
+   width: 100%;
 }
 .heading {
     width: 90%;
@@ -38,4 +237,48 @@ main {
     margin: 1rem auto;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.kuhusu {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--extra);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    justify-items: center;
+    min-height: 50vh;
+    transition: all 250ms ease-in-out;
+}
+.kuhusu:hover {
+    background-color: var(--clear);
+    padding: 2rem;
+}
+.kuhusu:hover .maelezo {
+    background-color: var(--primary);
+}
+.maelezo {
+    width: 95%;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+.logos {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tex {
+    font-size: 110%;
+    font-weight: 500;
+    color: var(--clear);
+}
+.tex strong {
+    color: var(--text);
 }
