@@ -8,7 +8,7 @@
     --texto: #0000;
     --primary:#fff;
     --clear: rgba(0,0,0,.6);
-    --extra:rgba(0,0,0,0.0125);
+    --extra:rgba(0,0,0,0.125);
     --clear2: rgba(0,0,0,.3);
     --shadow: var(--text) 0px 1px 2px 0px, var(--text) 0px 2px 6px 2px;
     --btn_shadow: var(--headings) 0px 1px 2px 0px, var(--headings) 0px 2px 6px 2px;

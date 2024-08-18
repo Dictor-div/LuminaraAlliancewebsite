@@ -129,6 +129,7 @@ header {
 }
 .dropdown:hover .dropdow_menu{
     display: block;
+    background-color: var(--primary);
 }
 
 /* navigation links */

@@ -313,14 +313,22 @@ img {vertical-align: middle;}
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
+    transition: all 350ms ease-in-out;
 }
 .statement p {
     font-size: x-large;
     font-weight: 700;
     color: var(--headings);
     opacity: .6;
+    transition: all 350ms ease-in-out;
 }
 
+.statement:hover {
+    background-color: var(--clear);
+}
+.statement:hover p {
+   color: var(--primary);
+}
 .visi {
     width: 90%;
     margin: 0 auto;
@@ -335,6 +343,11 @@ img {vertical-align: middle;}
     position: relative;
     width: 95%;
     margin: 0 auto;
+    transition: all 350ms ease-in-out;
+}
+.visigrid:hover {
+    width: 85%;
+    margin: 0 auto;
 }
 .grigri {
     background-color: var(--text);
@@ -342,8 +355,189 @@ img {vertical-align: middle;}
 .dridri {
     background-color: var(--headings);
 }
+.visigrid h3 {
+    color: var(--secondary);
+    text-align: center;
+    font-size: 150%;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.vi {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
 .visigrid p {
     color: var(--primary);
-    background-color: pe ;l
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
 }
 
+/* value section */
+
+.val {
+    background-color: var(--primary);
+}
+.tx {
+    width: 90%;
+    padding: 2rem;
+    position: relative;
+    margin: 0 auto;
+}
+.tx p {
+    color: var(--headings);
+    font-size: x-large;
+    font-weight: 700;
+    opacity: .6;
+    text-align: center;
+}
+.valcon {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.valcon ul {
+    list-style: square;
+    position: relative;
+    min-height: 15vh;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.valcon ul li {
+    font-size: larger;
+    font-weight: 700;
+    color: var(--text);
+}
+
+
+/* Theory of change, messaging & communication, and managing risks  */
+
+.grich {
+    width: 90%;
+    background-color: var(--text);
+    position: relative;
+    padding: 0;
+    margin: 1rem auto;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    justify-content: center;
+    transition: all 350ms ease-in-out;
+}
+.grich:hover {
+    background-color: black;
+}
+.chang {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+.chang h2 {
+    font-size: xx-large;
+    color: var(--secondary);
+    font-weight: 700;
+}
+.igi {
+    font-size: x-large;
+    font-weight: 700;
+    color: var(--primary);
+    width: 90%;
+    margin: 5px auto;
+}
+.one {
+    background-color: var(--clear);
+}
+.two {
+    background-color: var(--headings);
+}
+.ig {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.igis {
+    width: 80%;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    transform: translateX(-0%);
+}
+
+/*  footer section  */
+
+footer {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: var(--text);
+    text-align: center;
+}
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.foolinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+}
+.foolinks li {
+    padding: 5px;
+    position: relative;
+}
+.fool {
+    color: var(--primary);
+    font-size: large;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 350ms ease-in-out;
+}
+.fool:hover {
+    color: var(--secondary);
+}
+.copy {
+    color: var(--clear);
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+}
+.div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.theme {
+   font-size: small;
+   color: var(--secondary);
+   font-weight: 500;
+}
+.theme a {
+    text-decoration: line-through;
+    color: var(--headings);
+    transition: all 350ms ease-in-out;
+}
+.theme a:hover {
+    color: var(--primary);
+}
