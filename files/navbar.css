@@ -161,6 +161,7 @@ header {
 .nv_links:hover, .talk:hover {
     color: var(--headings);
     box-shadow: var(--shadow);
+    padding: 5px 20px;
 }
 .active {
     background-color: var(--headings);
@@ -186,6 +187,20 @@ header {
         position: relative;
         background-color: transparent;
         border: none;
+    }
+    .nv_links:hover, .talk:hover {
+        color: var(--headings);
+        box-shadow: var(--shadow);
+        padding: 5px 12px;
+    }
+    .dropdown:hover .dropdow_menu{
+        display: block;
+        background-color: var(--primary);
+        left: 6rem;
+        position: absolute;
+        top: -4rem;
+        width: 60%;
+        margin: 0 auto;
     }
     .ham, 
     .ham:after, 
