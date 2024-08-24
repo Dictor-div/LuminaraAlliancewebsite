@@ -488,17 +488,36 @@ footer {
     text-align: center;
 }
 .footer {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 10px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.focon {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+
+/* Footer links left side */
+
+
 .foolinks {
+    width: 90%;
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: 0 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+.foolinks p {
+    font-weight: 700;
+    color: var(--headings);
 }
 .foolinks li {
     padding: 5px;
@@ -506,7 +525,7 @@ footer {
 }
 .fool {
     color: var(--headings);
-    font-size: large;
+    font-size: medium;
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
@@ -515,6 +534,30 @@ footer {
 .fool:hover {
     color: var(--secondary);
 }
+
+
+/*  Footer social links - middle */
+
+
+.mid {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/*  adress side  - right side */
+
+
+.fcon {
+    width: 90%;
+    text-align: right;
+}
+
+
+
 .copy {
     color: var(--clear);
     font-weight: 700;
