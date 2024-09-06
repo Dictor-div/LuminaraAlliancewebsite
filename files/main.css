@@ -486,13 +486,16 @@ footer {
     padding: 0;
     margin: 0;
     text-align: center;
+    border-top: 2px solid var(--text);
 }
 .footer {
     width: 90%;
     margin: 0 auto;
     padding: 10px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .focon {
     width: 90%;
@@ -517,14 +520,14 @@ footer {
 }
 .foolinks p {
     font-weight: 700;
-    color: var(--headings);
+    color: var(--text);
 }
 .foolinks li {
     padding: 5px;
     position: relative;
 }
 .fool {
-    color: var(--headings);
+    color: var(--text);
     font-size: medium;
     font-weight: 500;
     text-transform: capitalize;
@@ -532,7 +535,7 @@ footer {
     transition: all 350ms ease-in-out;
 }
 .fool:hover {
-    color: var(--secondary);
+    color: var(--headings);
 }
 
 
@@ -545,7 +548,50 @@ footer {
     position: relative;
     text-align: center;
 }
+.mid {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+}
+.floim {
+    width: 30vmin;
+    margin: 0 auto;
+    position: relative;
+}
 
+.fsocial {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+}
+.fsocial p {
+    color: var(--headings);
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+.fsoc {
+    position: relative;
+    margin: 0 auto;
+}
+.fsoc a {
+    font-weight: 700;
+    position: relative;
+    font-size: x-large;
+    text-decoration: none;
+}
+.fa-facebook {
+    color: var(--headings);
+}
+.fa-linkedin {
+    margin: 0 5px;
+    color: #0A66C2;
+}
+.fa-x-twitter {
+    color: var(--clear);
+}
 
 
 /*  adress side  - right side */
@@ -554,21 +600,35 @@ footer {
 .fcon {
     width: 90%;
     text-align: right;
+    padding: 10px;
+}
+.fcon address {
+    position: relative;
+    margin: 3px 0;
+    color: var(--text);
+    font-style: normal;
+}
+.fcon address a {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 350ms ease-in-out;
+}
+.fcon address a:hover {
+    color: var(--headings);
 }
 
-
-
 .copy {
-    color: var(--clear);
+    color: var(--primary);
     font-weight: 700;
     margin: 0;
     text-align: center;
     font-size: medium;
 }
-.div {
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px 0;
+.divis {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    background-color: var(--text);
 }
 .theme {
    font-size: small;
